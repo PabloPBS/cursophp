@@ -9,15 +9,21 @@
 <body>
     <p>10. Escreva um código em PHP que cria uma função para calcular a área de um triângulo dado 
 base e altura.</p>
+<form action="" method="post">
+    Valor da base: <input type="number" name="b" style="margin: 10px 8px;"> <br>
+    Valor da altura: <input type="number" name="h"> <br>
+    <input type="submit" value="Confirmar" style="margin: 10px;">
+</form>
 <?php 
     function areaT($b, $h) {
         $a = ($b * $h)/2;
         return $a;
     }
-    $b = 10;
-    $h = 5;
-    $a = areaT($b, $h);
-    echo "O valor da área do triângulo é igual a: " . $a;
+    if ($_POST)
+        $b = $_POST["b"];
+        $h = $_POST["h"];
+        $a = areaT($b, $h);
+        echo "O valor da área do triângulo é igual a: " . $a;
 ?>
 </body>
 </html>

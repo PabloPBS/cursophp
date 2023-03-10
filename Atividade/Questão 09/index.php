@@ -8,9 +8,14 @@
 </head>
 <body>
     <p>9. Escreva um código em PHP que converte um número em hexadecimal e imprime o resultado</p>
+    <form action="" method="post">
+        <input type="number" name="num">
+        <input type="submit" value="Confirmar">
+    </form>
     <?php 
-        $num = 377;
-        echo "O número [$num] em hexadecimal é: " . dechex($num)
+        if ($_POST);
+            $num = $_POST["num"];
+            echo "O número [$num] em hexadecimal é: " . dechex($num)
     ?>
 </body>
 </html>

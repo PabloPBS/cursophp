@@ -9,12 +9,17 @@
 <body>
     <p>3. Escreva um código em PHP que verifica se uma string contém a palavra "PHP" e imprime o 
 resultado</p>
+<form method="post" action="">
+    <input type="text" name="texto">
+    <input type="submit" value="Confirmar">
+</form>
 <?php 
-    $str = "Estou aprendendo PHP!";
-    if (strpos($str, "PHP") == True) 
-        echo "A palavra [PHP] está presente na string";
-    else 
-        echo "A palavra [PHP] não está presente na string";
+    if ($_POST)
+        $str = $_POST["texto"];
+        if (strpos($str, "PHP") == True) 
+            echo "A palavra [PHP] está presente na string";
+        else 
+            echo "A palavra [PHP] não está presente na string";
 ?>
 </body>
 </html>

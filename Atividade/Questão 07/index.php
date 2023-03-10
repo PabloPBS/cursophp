@@ -8,9 +8,14 @@
 </head>
 <body>
     <p>7. Escreva um código em PHP que calcula a raiz quadrada de um número e imprime o resultado.</p>
+    <form action="" method="post">
+        <input type="number" name="num">
+        <input type="submit" value="Confirmar">
+    </form>
     <?php 
-        $num = 25;
-        echo "A raiz quadrada de [$num] é igual a: " . $num ** 0.5
+        if ($_POST)
+            $num = $_POST["num"];
+            echo "A raiz quadrada de [$num] é igual a: " . $num ** 0.5
     ?>
 </body>
 </html>

@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Questão 1</title>
+    <title>Média</title>
 </head>
 <body>
-    <h1 style="text-align: center;">Atividade de fixação</h1>
-    <p>1. Escreva um código em PHP que calcula a média de três números e imprime o resultado.
-</p>
-<?php 
-    $n1 = 7;
-    $n2 = 9;
-    $n3 = 4;
-    $m = ($n1+$n2+$n3)/3;
-    echo "Primeira nota do aluno: $n1 <br> Segunda nota do aluno: $n2 <br> Terceira nota do aluno: $n3 <br>";
-    echo "Média final do aluno: " . number_format($m, 2)
-?>
+    <form method="post" action="">
+        <p>Primeiro valor: </p>
+        <input type="number" name="n1">
+        <p>Segundo valor: </p>
+        <input type="number" name ="n2">
+        <p>Terceiro valor: </p>
+        <input type="number" name="n3">
+        <br>
+        <input type="submit" value="Confirmar" style="margin: 10px 0px;">
+    </form>
+    <?php 
+        if ($_POST) {
+            $n1 = $_POST["n1"];
+            $n2 = $_POST["n2"];
+            $n3 = $_POST["n3"];
+            echo "A média entre [$n1], [$n2] e [$n3] é: " . ($n1 + $n2 + $n3)/3;
+        }
+    ?>
 </body>
 </html>

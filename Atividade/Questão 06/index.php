@@ -10,13 +10,18 @@
     <p>6. Escreva um código em PHP que verifica se uma string começa com a letra "A" e termina com 
 a letra "Z" e imprime o resultado.
 </p>
+<form method="post" action="">
+    <input type="text" name="str">
+    <input type="submit" value="Confirmar">
+</form>
 <?php 
-    $str = "ADS";
-    echo "Texto: $str <br>";
-    if ($str[0] == 'A' and $str[2] == 'Z') 
-        echo "A string começa com [A] e termina com [Z].";
-    else 
-        echo "A string não começa com [A] e não termina com [Z].";
+    if ($_POST)
+        $str = $_POST["str"];
+        echo "Texto: $str <br>";
+        if ($str[0] == 'A' and $str[-1] == 'Z') 
+            echo "A string começa com [A] e termina com [Z].";
+        else 
+            echo "A string não começa com [A] e não termina com [Z].";
 ?>
 </body>
 </html>

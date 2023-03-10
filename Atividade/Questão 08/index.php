@@ -8,9 +8,14 @@
 </head>
 <body>
     <p>8. Escreva um código em PHP que converte um número em binário e imprime o resultado.</p>
+    <form action="" method="post">
+        <input type="number" name="num">
+        <input type="submit" value="Confirmar">
+    </form>
     <?php 
-        $num = 233;
-        echo "O número [$num] em binário é: " . decbin($num)
+        if ($_POST);
+            $num = $_POST["num"];
+            echo "O número [$num] em binário é: " . decbin($num)
     ?>
 </body>
 </html>
