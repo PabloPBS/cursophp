@@ -1,0 +1,17 @@
+Antigamente == <Script language="php">
+
+super tag PHP == <?php     ?>
+
+short open tag == <?    ?>
+
+asp tag == <%     %>
+
+. date("d/M/Y");
+/* D == Nome do dia
+   m == Número do mês
+   y == Simplificação do ano (2023 = 23) */
+
+date_default_timezone_set("America/Sao_Paulo"); //GMT -3
+ // == comentário
+
+Concatenação = .

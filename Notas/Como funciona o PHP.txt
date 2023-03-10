@@ -1,0 +1,4 @@
+Cliente-side e Server-side
+Front-end e Back-end
+
+PHP é voltado para web

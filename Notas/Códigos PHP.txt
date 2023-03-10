@@ -1,0 +1,12 @@
+São relacionados aos de html
+Documento base do html (!)
+php
+echo == print == imprimir 
+
+        <?php 
+            echo "Hello World";
+        ?>
+
+emojis: echo "Olá, Mundo! \u{1F30E}";
+
+phpinfo();
