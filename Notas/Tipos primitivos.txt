@@ -1,0 +1,25 @@
+-Escalares
+
+str      "Silva"
+int      34     / integer 
+float    85.9   / double/real - real saiu de linha
+bool     True   / boolean
+
+-Compostos
+
+array
+object
+
+-Especiais
+
+null
+resource
+callabe
+mixed
+
+var_dump() - mostrar as informações sobre a var
+0x = hexadecimal
+0b = binário
+0 = octal
+
+coerção: (int) 300.5 == 300

@@ -15,8 +15,13 @@ resultado</p>
 </form>
 <?php 
     if ($_POST)
-        $str = $_POST["str"]
-    
+        $str = strtolower($_POST["str"]);
+        $invstr = strtolower(strrev($str));
+        echo "$invstr <br> $str <br> ";
+        if ($str == $invstr)
+            echo "A string digitada é um palíndromo!";
+        else
+            echo "A string digitada não é um palíndromo."
 ?>
 </body>
 </html>
