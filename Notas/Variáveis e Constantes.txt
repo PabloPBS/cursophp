@@ -1,1 +1,32 @@
 numbwe_format($numero,2)
+Variável = muda 
+Constate = não varia
+$var == Variáveis
+
+const PAIS = "Brasil"; == Constantes
+SEM $
+
+As variáveis e constantes declaras serão armazenadas no servidos, e não no client-side
+
+Regras para os identificacores
+
+Variáveis sempre começam com o símbolo $
+O segundo caractere pode ser letra ou o símbulo _
+Aceita caracteres: alfabeto e _
+Aceita caracteres da tabelas ASCII a partir de 128
+Aceita caracteres acentuados
+A linguagem é case sensitive em relação aos nomes (exatamente igual)
+Nomes especias como $this não podem ser usados (identificadores reservados)
+
+Recomendação para nomes
+
+Nomes claros e de fácil identificação
+Evite nomes muitos curtos ou muito longos
+Defina um padrão de nomeação e siga em todo o projeto
+Para variáveis = letras minúsculas
+Para conrantes = letras maiúsculas
+Use camelCase para métodos e atributos
+Use SNAKE_CASE para constantes
+
+$nomeCompletoCliente == camelCase
+$telefone_contato_fornecedor == Snake_Case
