@@ -1,0 +1,29 @@
+Tipos de strings
+douple quoted - aspas duplas
+	-"Curso"
+	-Existe interpretação do conteúdo
+	-"PHP\u{1F418}"- interpulação
+
+single quoted - aspas simples
+	-'PHP\u{1F418}'
+
+heredoc 
+	-echo <<<FRASE ... FRASE;
+
+nowdoc
+	-echo <<<'FRASE' ... FRASE; - sem interpretação
+
+
+Operador de concatenação = .
+"Curso" . "PHP" == "CursoPHP"
+cont ESTADO = "RJ"
+echo "Moro no ESTADO" - Moro no ESTADO
+echo "Moro no " . ESTADO
+
+echo "$nom \"Minotauro\" $nom"; - Sequência de escape
+
+\n - nova linha
+\t - Tabulação horizontal
+\\ - Barra invertida
+\$ - Sinal de sifrão
+\u{} - Codepoint unicode

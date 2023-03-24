@@ -1,0 +1,8 @@
+method = get
+action = cad.php
+name = sobrenome
+value = "Guanabara"
+
+_$REQUEST = junção do get,post e cookies
+
+Operador de coalescência nula - ??

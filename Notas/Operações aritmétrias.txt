@@ -1,0 +1,17 @@
+Ordem de procedência
+()
+**
+* / %
++ -
+
+Expressões
+abs()
+base_convert() - (245, 10, 8) - da base 10 para base 8/16/2
+ceil, floor, round () - arredonda pra cima, pra baixo, normal
+hypot() - hipotenusa/tamanho dos cateto
+intdiv() - divisão inteira
+min, max () - máximo e mínino entre valores
+$r == pi()/M_PI
+pow() - Potência
+sin, cos, tang() - seno cosseno tangente
+sqrt() - raíz quadraa
